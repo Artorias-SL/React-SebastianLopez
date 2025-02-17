@@ -1,0 +1,25 @@
+.card{
+    border:solid 1px black;
+    border-radius:2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+h2{
+    padding: 2rem;
+}
+h3{
+    padding: 2rem;
+}
+.card-btn{
+    margin: 2rem;
+    border-radius: 2rem;
+    border: 1px gray;
+    padding: 0.8rem;
+    background-color: antiquewhite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.card-btn:hover{
+    background-color: aquamarine;
+}

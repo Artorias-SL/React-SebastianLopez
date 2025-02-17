@@ -1,0 +1,15 @@
+.Footer-text{
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0%;
+    display:  flex;
+    padding-top: 0.5rem ;
+}
+.Footer-Container{
+    padding: 0.8rem;
+}
