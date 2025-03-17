@@ -1,10 +1,14 @@
 .card{
-    border:solid 1px black;
+    border:solid 5px #FFCC40;
     border-radius:2rem;
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 15rem;
+   
+    flex-wrap: wrap;
+    justify-content: space-between;
+    perspective: 1000px;
 }
 h2{
     padding: 2rem;
@@ -15,11 +19,12 @@ h3{
 .card-btn{
     margin: 2rem;
     border-radius: 2rem;
-    border: 1px gray;
-    padding: 0.8rem;
-    background-color: antiquewhite;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.8rem;
+    color: #FFCC40;
+    background-color: #1a202c;
+    border-color: #FFCC40;
 }
 .card-btn:hover{
-    background-color: aquamarine;
+    background-color: #22FBBD;
 }

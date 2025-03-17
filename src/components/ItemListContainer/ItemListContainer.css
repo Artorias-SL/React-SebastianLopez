@@ -1,10 +1,18 @@
-h1{
+
+h2{
     display: flex;
     justify-content: center;
     padding: 3rem;
+    color: #22FBBD;
+}
+h3{
+    color: #22FBBD;
 }
 .container-cards{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    padding-top: 5rem;
+    background-color: #1a202c;
 }

@@ -1,16 +1,25 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Navbar from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import ItemDetail from './components/ItemDetail/ItemDetail';
 import Footer from './components/footer/Footer';
+
 function App() {
-
   return (
-    <div>
-      <Navbar/>
-      <ItemListContainer greetings="Bienvenido Usuario"/>
-      <Footer/>
-    </div>
-  )
-}
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/categoria/:categoria" element={<ItemListContainer />} /> 
+          <Route path="/detalle/:id" element={<ItemDetail />} /> 
+          <Route path="*" element={<p>404 ROUTE NOT FOUND</p>} /> 
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </>
+  );
+};
 
-export default App
+export default App;
